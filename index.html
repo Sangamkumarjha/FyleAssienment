@@ -156,6 +156,59 @@
            left: 40%;
            margin: 10px;
         }
+        .btn-custom {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .btn-custom {
+        background-color: #007bff; /* Blue background */
+        color: white; /* White text */
+        border: none; /* No border */
+        padding: 10px 20px; /* Padding */
+        font-size: 16px; /* Font size */
+        cursor: pointer; /* Pointer cursor on hover */
+        border-radius: 5px; /* Rounded corners */
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+        transform: scale(1.1); /* Slightly larger on hover */
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+    .clickable{
+        cursor:pointer;  
+        padding: 4px;
+    }
+    .clickable:hover{
+        border: 2px solid #0056b3; /* Darker blue*/;
+        margin: 4px;
+        padding: 4px;
+    }
+    .btn-png{
+   padding: 8px;
+    }
+    .btn-png:hover{
+        transform: scale(1.5);
+    }
+
     </style>
 </head>
 <body>
@@ -194,7 +247,7 @@
     
                             <h5>WEB DEVELOPMENT</h5>
                             <p>Morbi sed lacus nec risus finibus feugiat at fermentum nibh. Pellentesque.</p>
-                            <button class="btn-read-more" onclick="window.open('https:fylehq.com', '_blank')">Read More</button>
+                            <button class="btn-read-more btn-custom" onclick="window.open('https:fylehq.com', '_blank')">Read More</button>
                         </div>
                     </div>
                     <div class="carousel-image" style="background-image: url('image/Flyle3Image.jpg');"></div>
@@ -246,14 +299,14 @@
                 <div class="row">
                     <div class="col-md-3 growth-item">
                         <div class="growth-text">
-                            <img src="image/Heart.png" alt="Project Image" id="main-image">
+                            <img class="btn-png" src="image/Heart.png" alt="Project Image" id="main-image">
                             <h5>199+</h5>
                             <p>Saticfied Customers</p>
                         </div>
                     </div>
                     <div class="col-md-3 growth-item">
                         <div class="growth-text">
-                            <img src="image/Time.png" alt="Project Image" id="main-image">
+                            <img class="btn-png" src="image/Time.png" alt="Project Image" id="main-image">
     
                             <h5>1591+</h5>
                             <p>Days Of Operation</p>
@@ -261,7 +314,7 @@
                     </div>
                     <div class="col-md-3 growth-item">
                         <div class="growth-text">
-                            <img src="image/check.png" alt="Project Image" id="main-image">
+                            <img class="btn-png" src="image/check.png" alt="Project Image" id="main-image">
     
                             <h5>283+</h5>
                             <p>Complete Project</p>
@@ -269,7 +322,7 @@
                     </div>
                     <div class="col-md-3 growth-item">
                         <div class="growth-text">
-                            <img src="image/Winner.png" alt="Project Image" id="main-image">
+                            <img class="btn-png" src="image/Winner.png" alt="Project Image" id="main-image">
     
                             <h5>75+</h5>
                             <p>Win Awards</p>
@@ -307,7 +360,7 @@
                                 <input type="checkbox" class="form-check-input" id="agreeCheck" required>
                                 <label class="form-check-label" for="agreeCheck">I agree to Fyle's terms and condition, and provide consent me communication. </label>
                             </div>
-                            <button  type="submit" class="btn btn-primary">Submit</button>
+                            <button  type="submit" class="btn btn-primary btn-custom">Submit</button>
                         </form>
                     </div>
                 </div>
